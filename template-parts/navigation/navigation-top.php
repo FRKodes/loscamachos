@@ -12,10 +12,10 @@
 <!-- <nav id="site-navigation" class="main-navigation navbar navbar-expand-md fixed-top" role="navigation" aria-label="Top Menu">
 	
 
-</nav><!-- #site-navigation --> -->
+</nav>-->
 
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 	<a class="navbar-brand" href="//<?php echo $_SERVER['HTTP_HOST'] ?>/demo"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo-los-camachos.svg" alt="Logo los camachos"></a>
 
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
