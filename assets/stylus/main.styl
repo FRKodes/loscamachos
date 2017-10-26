@@ -35,15 +35,19 @@ body
 #main
 	overflow hidden
 .navbar
-	background -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%)
-	background -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)
-	background linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)
+	background -moz-linear-gradient(top, rgba(0,0,0,0.65) 58%, rgba(0,0,0,0) 100%)
+	background -webkit-linear-gradient(top, rgba(0,0,0,0.65) 58%,rgba(0,0,0,0) 100%)
+	background linear-gradient(to bottom, rgba(0,0,0,0.65) 58%,rgba(0,0,0,0) 100%)
 	background-color transparent
+	border-bottom 1px solid amarillo-00
 .navbar-brand
 	img
 		width 56px
 		height auto
 		display block
+.navbar-dark
+	.navbar-toggler
+		border none
 .menu-header-menu-container
 	width 100%
 .navbar-collapse
@@ -61,6 +65,9 @@ body
 	background gray
 	padding-top 230px
 	border-bottom 5px solid amarillo-00
+	&.atracciones
+		background transparent url(./images/atracciones-top-aquaracer.png) no-repeat center center
+		background-size cover
 h1.banner-title
 	font-size 2em
 	line-height .6em
@@ -131,7 +138,7 @@ h2.title
 			width 40px
 .rutas-back
 	background-image url(./images/background-rutas-parallax-mobile.jpg)
-	background-position center -100%
+	background-position center -45%
 	background-repeat no-repeat
 	background-size 100%
 	border-top 1px solid azul-01
@@ -154,6 +161,7 @@ h2.title
 	top 70%
 	display flex
 	align-items center
+	z-index 10
 	img
 		width 60px
 		margin-left -30px
@@ -175,10 +183,154 @@ h2.title
 		height auto
 		.image
 			margin-bottom 30px
+			text-align center
+		img
+			height auto
+			width 75%
+			display inline-block
+.slick-arrow
+	color transparent
+	position absolute
+	top 0
+.slick-dots
+	padding 0
+	margin 0
+	text-align center
+	li
+		display inline-block
+		overflow hidden
+		background azul-01
+		transition background .5s ease
+		width 14px
+		height 14px
+		border-radius 50%
+		overflow hidden
+		margin 0 5px
+		border 2px solid rgba(azul-00, .2)
+		&.slick-active
+			background amarillo-00
+			transition background 1s ease
+		button
+			background none
+			color transparent
+			border none
+.button-rutas
+	padding 30px 0 0
+	a
+		display flex
+		flex-direction row
+		align-items center
+		justify-content center
+		img
+			width 35px
+			position relative
+			z-index 2
+		.white-block
+			background-color white
+			padding-left 10px
+			padding-right 10px
+			border-radius 4px
+			margin-left -5px
+			position relative
+			z-index 1
+.main-container-atracciones
+	background-image url(./images/atracciones-background.png)
+	background-repeat no-repeat
+	background-size cover
+	background-position center 130px
+.atraccion-item
+	color white
+	text-align center
+	margin-bottom 20px
+	.slick-dots
+		margin-top -60px
+		z-index 10
+		position absolute
+		right 0
+		width 100%
+		background purple
+		text-align right
+		padding 20px 10px 10px 10px
+		background -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 55%)
+		background -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 55%)
+		background linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 55%)
+		li
+			margin 10px 10px 0 10px
+	.photo
+		position relative
+		.photos-container
+			box-shadow -5px 5px 10px rgba(black, .2)
+	img
+		width 100%
+	.circle
+		width 40px
+		height 40px
+		border-radius 50%
+		background-color amarillo-00
+		position absolute
+		bottom -12px
+		left -2px
+		display flex
+		align-items center
+		z-index 10
+		img
+			margin-left 20px
+			width 60px
+	.title
+		padding 0
+		text-align center
+		margin-top 10px
+.atracciones-gallery
+	position relative
+	.gallery-item
 		img
 			width 100%
 			height auto
-			display block
+	.slick-dots
+		bottom 15px
+		position absolute
+		width 100%
+		li
+			margin 0 10px
+.atracciones-map
+	img
+		width 100%
+		height auto
+.zones-container
+	position relative
+	.slick-dots
+		position absolute
+		bottom -40px
+		width 100%
+	.zone-item
+		padding 30px 20px 60px 20px
+		.title
+			color white
+			text-align center
+			font-size 1.4em
+		.info-container
+			background-color white
+			color black
+			padding 20px
+			margin-top 20px
+			box-shadow -5px 5px 10px rgba(black, .2)
+			p
+				margin-bottom 0
+		&.purple
+			background-color purple
+		&.green
+			background-color green
+		&.blue
+			background-color blue
+.icons-container
+	text-align center
+	padding 80px 0 60px 0
+	.icon-item
+		display inline-block
+		width 49%
+		img
+			width 60%
+			height auto
 footer
 	color white
 	font-weight 100
@@ -228,6 +380,10 @@ footer
 		height 720px
 		background-size 900px
 @media screen and (min-width: 768px)
+	.navbar
+		width 760px
+		margin 0 auto
+		background none
 	.navbar-collapse
 		justify-content flex-end
 		li
@@ -279,12 +435,29 @@ footer
 			width 60%
 			.title
 				font-size 1.8em
+	.button-rutas
+		a
+			img
+				width 50px
+			.white-block
+				font-size 1.2em
+	.main-container-atracciones
+		background-position center 180px
+	.icons-container
+		.icon-item
+			width 16%
+			img
+				width 80%
 	footer
 		.block-footer
 			border-top none
 			padding-top 0
 			border-left 1px solid amarillo-00
 @media screen and (min-width: 992px)
+	.navbar
+		width 960px
+		margin 0 auto
+		background none
 	.main-banner-home
 		height 570px
 		padding-top 460px
@@ -311,7 +484,28 @@ footer
 		width 100%
 	.rutas-back
 		background-size 1400px
+		background-position center -320px
+	.cicle-right-home
+		top 70%
+	.button-rutas
+		padding-top 60px
+		a
+			img
+				width 80px
+			.white-block
+				font-size 1.6em
+	.main-container-atracciones
+		background-position center 210px
+	.atraccion-item
+		.title
+			font-size 1.8em
+	.icons-container
+		.icon-item
+			img
+				width 65%
 @media screen and (min-width: 1200px)
+	.navbar
+		width 1170px
 	.home-price-block
 		height 600px
 	.image-racer-home
@@ -319,6 +513,26 @@ footer
 	.rutas-back
 		background-image url(./images/background-rutas-parallax-1920.jpg)
 		background-size 1500px
+		background-position center -360px
+	.main-container-atracciones
+		background-position center 210px
+		padding-top 80px
+		padding-bottom 100px
+	.zones-container
+		position relative
+		.slick-dots
+			position absolute
+			bottom -40px
+			width 100%
+		.zone-item
+			padding 30px 50px
+			.info-container
+				padding 20px 20px 40px 20px
+				margin-top 20px
+	.icons-container
+		.icon-item
+			img
+				width 60%
 @media screen and (min-width: 1400px)
 	.rutas-back
 		background-size 1700px
@@ -343,3 +557,4 @@ footer
 	.rutas-back
 		background-size cover
 		background-position center 170%
+		
