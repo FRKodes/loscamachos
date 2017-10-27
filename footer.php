@@ -34,7 +34,7 @@
 							<div class="footer-menu-block"><?php wp_nav_menu( array('theme_location' => 'footer', 'menu_class' => 'footer-menu') ); ?></div>
 						</div>
 
-						<div class="block-footer col-xs-12 col-sm-4 col-md-5">
+						<div class="block-footer col-xs-12 col-sm-5 col-md-5">
 							<p class="footer-title">¿Dónde estamos?</p>
 							<p>
 								Km.19 Nva. Carretera a Saltillo, Guadalajara, Jal. 45280 <br>
