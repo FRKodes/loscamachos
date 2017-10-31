@@ -3,8 +3,8 @@
 		<div class="main-banner-home contacto">
 			
 			<h1 class="text-center paytone banner-title">
-				ATRACCIONES<br>
-				<span class="roboto">DIVERSIÓN GARANTIZADA</span>
+				CONTÁCTANOS<br>
+				<span class="roboto">CON GUSTO TE ATENDEMOS</span>
 			</h1>
 
 		</div>
@@ -16,7 +16,15 @@
 	<div class="row">
 		
 		<div class="maps-left hidden d-md-block col-md-3">
-			ok
+			<p class="mayus amarillo-00 paytone text-center routes-title">rutas</p>
+			<ul class="routes-list">
+				<li><a href="#">371</a></li>
+				<li><a href="#">275-B</a></li>
+				<li class="active"><a href="#">647</a></li>
+				<li><a href="#">63</a></li>
+				<li><a href="#">622</a></li>
+				<li><a href="#">24</a></li>
+			</ul>
 		</div>
 
 		<div class="maps-right col-xs-12 col-md-9">

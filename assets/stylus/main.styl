@@ -76,6 +76,9 @@ body
 	&.precios
 		background transparent url(./images/precios-top-banner-los-camachos.png) no-repeat center center
 		background-size cover
+	&.servicios
+		background transparent url(./images/servicios-top-banner.png) no-repeat center center
+		background-size cover
 	&.contacto
 		background transparent url(./images/contacto-top-banner-los-camachos.png) no-repeat center center
 		background-size cover
@@ -638,10 +641,42 @@ footer
 			width 80%
 	.maps-container
 		height 480px
+		margin-bottom 60px
+	.routes-title
+		background azul-01
+		width 100%
 	.maps-left
 		background azul-00
 		padding-right 0
+		padding-left 0
 		height 480px
+		p
+			background azul-01
+			padding 10px 0
+			font-size 1.4em
+	.routes-list
+		padding 0
+		display flex
+		align-items center
+		flex-flow column
+		justify-content center
+		padding-top 20px
+		li
+			display block
+			border-bottom 1px solid rgba(azul-01, 1)
+			text-align center
+			padding-top 15px
+			padding-bottom 15px
+			width 80%
+			a
+				color white
+			&:last-of-type
+				border none
+			&.active
+				background rgba(azul-01, .3)
+				a
+					color azul-01
+					font-weight 700
 	.maps-right
 		padding-left 0
 		.map
@@ -711,6 +746,11 @@ footer
 		height 380px
 		p
 			padding 0 300px
+	.maps-container
+		height 650px
+	.maps-right .map
+	.maps-left
+		height 650px
 @media screen and (min-width: 1200px)
 	.navbar
 		width 1170px
