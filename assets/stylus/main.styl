@@ -2,6 +2,8 @@ azul-00 = #a7c9d5
 azul-01 = #3d8ea1
 azul-02 = #226777
 amarillo-00 = #f2ab2b
+.hidden
+	display none
 .relative
 	position relative
 .separated
@@ -74,7 +76,9 @@ body
 	&.precios
 		background transparent url(./images/precios-top-banner-los-camachos.png) no-repeat center center
 		background-size cover
-	
+	&.contacto
+		background transparent url(./images/contacto-top-banner-los-camachos.png) no-repeat center center
+		background-size cover
 h1.banner-title
 	font-size 2em
 	line-height .6em
@@ -416,6 +420,36 @@ img.convenios
 	margin-bottom 30px
 .convenios-container
 	position relative
+.maps-right
+	.map
+		height 420px
+		width 100%
+		background gray
+.contact-container
+	padding-bottom 40px
+.contact-text
+	padding-top 30px
+	padding-bottom 30px
+	text-align center
+.form-group
+	label
+		font-weight 100
+		font-size .8em
+.form-control
+	background-color azul-00
+	border-radius 0
+	border none
+	transition background-color .5s ease
+	color white
+	&:focus
+		background-color azul-01
+		transition all .5s ease
+		color white
+.btn-send
+	background-color azul-01
+	border-radius 0
+	padding-left 2em
+	padding-right 2em
 footer
 	color white
 	font-weight 100
@@ -602,6 +636,22 @@ footer
 		width 18%
 		img
 			width 80%
+	.maps-container
+		height 480px
+	.maps-left
+		background azul-00
+		padding-right 0
+		height 480px
+	.maps-right
+		padding-left 0
+		.map
+			height 480px
+	.contact-container
+		display flex
+		flex-flow row-reverse
+		padding-bottom 40px
+	.contact-text
+		text-align left
 @media screen and (min-width: 992px)
 	.navbar
 		width 960px
@@ -660,7 +710,7 @@ footer
 	.block-groups
 		height 380px
 		p
-			padding 0 360px
+			padding 0 300px
 @media screen and (min-width: 1200px)
 	.navbar
 		width 1170px
