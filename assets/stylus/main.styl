@@ -2,6 +2,8 @@ azul-00 = #a7c9d5
 azul-01 = #3d8ea1
 azul-02 = #226777
 amarillo-00 = #f2ab2b
+.overflow-hidden
+	overflow hidden
 .hidden
 	display none
 .relative
@@ -63,13 +65,38 @@ body
 		margin 5px 0
 		a
 			color white
+
+.big-background
+	height 300px !important
+	background transparent
+	background-size cover
+	a
+		width 100%
+		height 100%
+		display block
+		overflow hidden
+		position relative
+		background rgba(red, .2)
+		
+
 .main-banner-home
 	width 100%
 	display block
 	height 300px
 	background gray
-	padding-top 230px
 	border-bottom 5px solid amarillo-00
+	overflow hidden
+	position relative
+	padding-bottom 56.25%
+	padding-top 25px
+	height 0
+	iframe
+		position absolute
+		top 0
+		left 0
+		width 125%
+		height 116%
+		margin-left -12.5%
 	&.atracciones
 		background transparent url(./images/atracciones-top-aquaracer.png) no-repeat center center
 		background-size cover
@@ -86,6 +113,9 @@ h1.banner-title
 	font-size 2em
 	line-height .6em
 	color white
+	position relative
+	z-index 11
+	margin-top 120px
 	span
 		font-size .4em
 		letter-spacing 3px
@@ -114,6 +144,12 @@ h2.title
 		display block
 .prices-container
 	margin-top 40px
+	.slick-dots
+		padding-top 20px
+		padding-left 60px
+		padding-bottom 20px
+		position relative
+		z-index 10
 .price-item
 	color white
 	padding-left 120px
@@ -123,7 +159,7 @@ h2.title
 		position absolute
 		z-index -1
 		font-size 6em
-		top -50px
+		top -45px
 		left 100px
 		color rgba(white, .4)
 	p
@@ -142,9 +178,9 @@ h2.title
 				bottom 0
 				position absolute
 		&.diclaimer
-			font-size .7em
+			font-size .6em
 			font-weight 100
-			padding-right 100px
+			padding-right 50px
 			margin-top -15px
 	.olas
 		padding-left 80px
@@ -209,6 +245,8 @@ h2.title
 	color transparent
 	position absolute
 	top 0
+	background none
+	border none
 .slick-dots
 	padding 0
 	margin 0
@@ -423,6 +461,48 @@ img.convenios
 	margin-bottom 30px
 .convenios-container
 	position relative
+.routes-selector
+	position absolute
+	top 10px
+	color amarillo-00
+	z-index 9
+	width 90%
+	text-align center
+	a
+		background azul-01
+		padding 5px 60px
+		display inline-block
+	.inner-routes-list-container
+		height 0
+		overflow hidden
+		transition height .5s ease
+		&.opened
+			height auto
+			transition height .5s ease
+	.inner-routes-list
+		background azul-01
+		padding 10px 0
+		li
+			display block
+			&:last-of-type a
+				border-bottom none
+		a
+			color white
+			border-bottom 1px solid white
+			
+.routes-disclaimer
+	position absolute
+	bottom -10px
+	font-size .8em
+	z-index 9
+	width 90%
+	p
+		background white
+		padding 10px 20px
+		width 90%
+		margin-left auto
+		margin-right auto
+		font-size .8em
 .maps-right
 	.map
 		height 420px
@@ -462,6 +542,9 @@ footer
 		&:first-of-type
 			border none
 			padding-top 0
+	.likes
+		padding 20px 30px
+		overflow hidden
 	.social-links
 		padding 30px 0
 		margin 0
@@ -471,6 +554,10 @@ footer
 			margin 0 10px
 			a
 				color white
+			img
+				width 25px
+				height auto
+				display inline-block
 	.footer-title
 		font-size 1.1em
 		font-weight normal
@@ -488,7 +575,7 @@ footer
 		background-size 700px
 		height 620px
 	.price-item
-		padding-left 50%
+		padding-left 10%
 		.big-letter
 			left 45%
 	h2.title
@@ -504,6 +591,9 @@ footer
 				width 340px
 				margin-left auto
 				margin-right auto
+	footer
+		.likes
+			padding 20px 80px
 @media screen and (min-width: 576px)
 	.price-block-container
 		width 90%
@@ -540,6 +630,17 @@ footer
 		height 720px
 		background-size 900px
 @media screen and (min-width: 768px)
+	#masthead
+		background-color rgba(purple, .2)
+		background -moz-linear-gradient(top, rgba(0,0,0,0.65) 58%, rgba(0,0,0,0) 100%)
+		background -webkit-linear-gradient(top, rgba(0,0,0,0.65) 58%,rgba(0,0,0,0) 100%)
+		background linear-gradient(to bottom, rgba(0,0,0,0.65) 58%,rgba(0,0,0,0) 100%)
+		height 68px
+		overflow hidden
+		display block
+		position fixed
+		z-index 1
+		width 100%
 	.navbar
 		width 760px
 		margin 0 auto
@@ -551,21 +652,29 @@ footer
 			display inline-block
 			a
 				padding 5px
+	.big-background
+		height 480px !important
 	.main-banner-home
 		height 480px
-		padding-top 400px
+		margin-top -70px
+		iframe
+			width 240%
+			height 120%
+			margin-left -70%
+			margin-top -10%
+	h1.banner-title
+		margin-top 370px
 	h2.title
 		font-size 2em
-		padding-left 65%
+		padding-left 50%
 	.home-price-block
 		padding-top 50px
 		background transparent url(./images/background-precios-1920.jpg) no-repeat 200px top
 		background-size cover
 		height 500px
 	.price-item
-		padding-left 65%
 		.big-letter
-			left 60%
+			left 48%
 	.image-racer-home
 		width 120%
 	.rutas-back
@@ -687,24 +796,45 @@ footer
 		padding-bottom 40px
 	.contact-text
 		text-align left
+	footer
+		.social-links
+			padding 30px 0
+			margin 0
+			text-align center
+			li
+				display inline-block
+				margin 0 10px
+				a
+					color white
+				img
+					width 30px
+					height auto
+					display inline-block
 @media screen and (min-width: 992px)
 	.navbar
 		width 960px
 		margin 0 auto
 		background none
+	.big-background
+		height 570px !important
 	.main-banner-home
 		height 570px
-		padding-top 460px
 		h1.banner-title
 			font-size 2.8em
+			margin-top 470px
 	h2.title
 		font-size 2.4em
+		padding-left 60%
 	.home-price-block
 		height 500px
+	.prices-container
+		.slick-dots
+			padding-left 400px
 	.price-item
-		padding-left 65%
+		padding-left 12%
 		.big-letter
-			left 60%
+			left 57%
+			top -43px
 		p.price-title
 			font-size .85em
 		p.big
@@ -766,6 +896,9 @@ footer
 		background-position center 210px
 		padding-top 80px
 		padding-bottom 100px
+	.main-banner-home
+		h1.banner-title
+			margin-top 700px
 	.zones-container
 		position relative
 		.slick-dots
@@ -818,6 +951,9 @@ footer
 @media screen and (min-width: 1600px)
 	.home-price-block
 		height 800px
+	.prices-container
+		.slick-dots
+			padding-left 500px
 	.image-racer-home
 		width 90%
 	.rutas-back

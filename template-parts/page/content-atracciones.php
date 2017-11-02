@@ -140,46 +140,46 @@
 			<div class="zone-item purple">
 				<div class="title paytone mayus">Zona Morada</div>
 				<div class="info-container">
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>							
+					<p>01 Kamikaze</p>
+					<p>02 Aquatubos</p>
+					<p>03 Toboganes</p>
+					<p>04 Canchas</p>
+					<p>05 Juegos infantiles</p>
+					<p>06 Trampolines</p>
+					<p>07 Vestidores Renta</p>
+					<p>08 Enfermería</p>
+					<p>09 Vestidores Generales</p>
+					<p>10 Carnes Asadas</p>
 				</div>
 			</div>
 			<div class="zone-item green">
 				<div class="title paytone mayus">Zona Verde</div>
 				<div class="info-container">
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
+					<p>11 Trajes</p>
+					<p>12 Helados</p>
+					<p>13 Comida</p>
+					<p>14 Bebidas</p>
+					<p>15 Lonches</p>
+					<p>16 Snack</p>
+					<p>17 Zona infantil</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
 				</div>
 			</div>
 			<div class="zone-item blue">
 				<div class="title paytone mayus">Zona Azul</div>
 				<div class="info-container">
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet</p>
+					<p>18 Tobogán infantil</p>
+					<p>19 Aquatubo</p>
+					<p>20 Popote</p>
+					<p>21 Mini racer</p>
+					<p>22 Tornado</p>
+					<p>23 Aquaracer</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
 				</div>
 			</div>
 		</div>

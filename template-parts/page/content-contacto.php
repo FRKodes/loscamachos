@@ -27,7 +27,24 @@
 			</ul>
 		</div>
 
-		<div class="maps-right col-xs-12 col-md-9">
+		<div class="maps-right col-xs-12 col-md-9 relative">
+			<div class="routes-selector paytone mayus">
+				<a href="#" class="amarillo-00">VER RUTAS</a>
+				<div class="inner-routes-list-container">
+					<ul class="inner-routes-list">
+						<li><a class="route-371" href="#">371</a></li>
+						<li><a class="route-275-B" href="#">275-B</a></li>
+						<li><a class="route-647" href="#">647</a></li>
+						<li><a class="route-63" href="#">63</a></li>
+						<li><a class="route-622" href="#">622</a></li>
+						<li><a class="route-24" href="#">24</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="routes-disclaimer">
+				<p class="text-center azul-01">Los camiones salen cada hora y media a partir de las 6:20 a.m. El último camión de regreso sale a las 7:00 p.m.</p>	
+			</div>
+
 			<div id="map0" class="map d-xs-block">Map - 00</div>
 			<div id="map1" class="map hidden">Map - 01</div>
 			<div id="map2" class="map hidden">Map - 02</div>

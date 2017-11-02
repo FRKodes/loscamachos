@@ -17,11 +17,16 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="back-azul-01">
 				<div class="container">
-					<div class="col-xs-12">
-						<ul class="social-links">
-							<li><a target="_blank" href="https://www.facebook.com/LCamachos" class="icon-facebook">F</a></li>
-							<li><a target="_blank" href="https://www.youtube.com" class="icon-youtube">Y</a></li>
-						</ul>
+					<div class="row">
+						<div class="col-xs-12 col-md-6 social">
+							<ul class="social-links">
+								<li><a target="_blank" href="https://www.facebook.com/LCamachos" class="icon-facebook"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.svg" alt="Los camachos parque acuático en facebook"></a></li>
+								<li><a target="_blank" href="https://www.youtube.com" class="icon-youtube"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube.svg" alt="Los camachos parque acuático en instagram"></a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-md-6 text-center likes">
+							<div class="fb-like" data-href="https://www.facebook.com/LCamachos/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+						</div>
 					</div>
 				</div>
 			</div>

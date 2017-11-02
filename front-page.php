@@ -16,10 +16,16 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
+
+		<section class="big-background">
+			<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=BVa6_70RWGA',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
+		    <!-- <div class="pattern"></div> -->
+		</section>
 		
-		<div class="container-fluid">
+		<!-- <div class="container-fluid">
 			<div class="row">
 				<div class="main-banner-home">
+					<iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/P7wAVpz4fZ4?rel=0&amp;controls=0&amp;showinfo=0&version=3&enablejsapi=1&html5=1&hd=1&wmode=opaque&showinfo=0&rel=0;;origin=http://www.loscamachos.com.mx;&controls=0" frameborder="0" allowfullscreen></iframe>
 					
 					<h1 class="text-center paytone banner-title">
 						¡VISÍTANOS HOY!<br>
@@ -28,7 +34,7 @@ get_header(); ?>
 
 				</div>
 			</div>
-		</div>
+		</div> -->
 		
 		<div class="back-azul-00">
 			<div class="container-fluid">
@@ -44,11 +50,15 @@ get_header(); ?>
 									<figure class="olas"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></figure>
 									<p class="diclaimer">Incluye todas las atracciones.</p>
 								</div>
-								<!-- <div class="price-item">
-									BOLETO NIÑOS $??
-									*De 3 a 10 años o hasta 1.40 mt. de estatura.
-									Incluye todas las atracciones.
-								</div> -->
+								<div class="price-item">
+									<div class="big-letter paytone">N</div>
+									<p class="price-title">BOLETO NIÑOS</p>
+									<p class="big paytone">$60.00</p>
+									<figure class="olas"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></figure>
+									<p class="diclaimer">
+										*De 3 a 10 años o hasta 1.40 mt. de estatura. Incluye todas las atracciones.
+									</p>
+								</div>
 							</div>
 						</div>
 						<div class="image-racer-home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/front-precios.png" alt="runner niños y precios"></div>
