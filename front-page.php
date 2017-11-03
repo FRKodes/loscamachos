@@ -18,7 +18,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<section class="big-background">
-			<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=BVa6_70RWGA',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
+			<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=P7wAVpz4fZ4',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
 		    <!-- <div class="pattern"></div> -->
 		</section>
 		
@@ -80,23 +80,23 @@ get_header(); ?>
 				<div class="col-xs-12">
 					<div class="routes-container">
 						<div class="route-item">
-							<div class="image"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-minerva.jpg" alt="ruta hacia los camachos desde la minerva"></a></div>
-							<div class="title mayus paytone azul-01">La Minerva</div>
+							<div class="image"><a href="/contacto"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-minerva.jpg" alt="ruta hacia los camachos desde la minerva"></a></div>
+							<div class="title mayus paytone azul-01"><a class="azul-01" href="/contacto">La Minerva</a></div>
 						</div>
 						<div class="route-item">
-							<div class="image"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-del-sol.jpg" alt="ruta hacia los camachos desde plaza del sol"></a></div>
-							<div class="title mayus paytone azul-01">Plaza del sol</div>
+							<div class="image"><a href="/contacto"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-del-sol.jpg" alt="ruta hacia los camachos desde plaza del sol"></a></div>
+							<div class="title mayus paytone azul-01"><a class="azul-01" href="/contacto">Plaza del sol</a></div>
 						</div>
 						<div class="route-item">
-							<div class="image"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-patria.jpg" alt="ruta hacia los camachos desde plaza patria"></a></div>
-							<div class="title mayus paytone azul-01">Plaza Patria</div>
+							<div class="image"><a href="/contacto"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-patria.jpg" alt="ruta hacia los camachos desde plaza patria"></a></div>
+							<div class="title mayus paytone azul-01"><a class="azul-01" href="/contacto">Plaza Patria</a></div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-12">
 					<div class="button-rutas">
-						<a href="#">
+						<a href="/contacto">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-los-camachos.svg" alt="rutas los camachos">
 							<div class="white-block paytone amarillo-00 mayus">Ver + rutas</div>
 						</a>

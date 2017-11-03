@@ -1,18 +1,83 @@
+$(function(){	
+	var formSettings = {
+		singleError : function($field, rules){ 
+			$field.closest('.form-group').removeClass('valid').addClass('error');
+			$('.alert_fields').fadeIn();
+		},
+		singleSuccess : function($field, rules){ 
+			$field.closest('.form-group').removeClass('error').addClass('valid');
+			$('.alert_fields').fadeOut();
+		},
+		overallSuccess : function(){
+			var form    	= $('#contactForm'),
+				nombre		= form.find( "input[name='nombre']").val(),
+				correo		= form.find( "input[name='correo']").val(),
+				mensaje		= form.find( "textarea[name='mensaje']").val(),
+				action		= form.attr( "action"),
+				url			= action;
+
+			var posting = $.post(
+				url, { n: nombre, c: correo, m: mensaje }
+			);
+			posting.done(function( data ){
+				console.log('email sent! \n' + data );
+				$('#contactForm')[0].reset();
+				$('.sent_mail_alert').fadeIn().delay(3000).fadeOut();
+			});
+		},
+		overallError : function($form, fields){ /*Do nothing, just show the error fields*/ },
+			autoDetect : true, debug : true
+		};
+	var $validate = $('#contactForm').validate(formSettings).data('validate');
+});
 function initMap() {
 	var map = new google.maps.Map(document.getElementById('map0'), {
 		zoom: 14,
 		center: {lat: 20.695178, lng: -103.348580},
 		mapTypeControl: false,
-		mapTypeId: 'terrain'
+		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
 
 
-	// var map1 = new google.maps.Map(document.getElementById('map1'), {
-	// 	zoom: 14,
-	// 	center: {lat: 0, lng: -180},
-	// 	mapTypeControl: false,
-	// 	mapTypeId: 'terrain'
-	// });
+	var map1 = new google.maps.Map(document.getElementById('map1'), {
+		zoom: 14,
+		center: {lat: 20.695178, lng: -103.348580},
+		mapTypeControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
+
+	var map2 = new google.maps.Map(document.getElementById('map2'), {
+		zoom: 3,
+		center: {lat: 20.695178, lng: -103.348580},
+		mapTypeControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
+
+	var map3 = new google.maps.Map(document.getElementById('map3'), {
+		zoom: 5,
+		center: {lat: 20.695178, lng: -103.348580},
+		mapTypeControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
+
+	var map4 = new google.maps.Map(document.getElementById('map4'), {
+		zoom: 7,
+		center: {lat: 20.695178, lng: -103.348580},
+		mapTypeControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
+
+	var map5 = new google.maps.Map(document.getElementById('map5'), {
+		zoom: 9,
+		center: {lat: 20.695178, lng: -103.348580},
+		mapTypeControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
 
 
 	var flightPlanCoordinates = [
@@ -38,6 +103,27 @@ function initMap() {
 
 
 (function($) {
+
+	$('.ver-mas-rutas').on('click', function () {
+		console.log('clicked!!');
+		$('.inner-routes-list-container').toggleClass('opened');
+	});
+
+	$('.inner-routes-list a, .routes-list a').on('click', function () {
+		var this_element_attr = $(this).attr('class');
+		$('.routes-list li').removeClass('active');
+		$(this).parent().addClass('active');
+		$('.map').hide();
+		$('.' + this_element_attr).show();
+		$('.inner-routes-list-container').removeClass('opened');
+	});
+
+	setTimeout(function(){
+		$('.hide-this').addClass('hidden');
+	}, 1000);
+
+
+
 	$(document).ready(function() {
 		/* IF YOU WANT TO APPLY SOME BASIC JQUERY TO REMOVE THE VIDEO BACKGROUND ON A SPECIFIC VIEWPORT MANUALLY
 		 var is_mobile = false;
@@ -125,9 +211,6 @@ $('.zones-container').slick({
 		dots: true
 	  }
 	}
-	// You can unslick at a given breakpoint now by adding:
-	// settings: "unslick"
-	// instead of a settings object
   ]
 });
 
@@ -148,8 +231,5 @@ $('.tickets-container').slick({
 		dots: true
 	  }
 	}
-	// You can unslick at a given breakpoint now by adding:
-	// settings: "unslick"
-	// instead of a settings object
   ]
 });

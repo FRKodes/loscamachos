@@ -100,7 +100,7 @@
 		</div>
 
 		<div class="col-xs-12 col-sm-10 col-md-8 ml-auto mr-auto">
-			<img class="convenios" src="<?php echo get_stylesheet_directory_uri(); ?>/images/precios-image-fake.png" alt="precios image fake">
+			<img class="convenios" src="<?php echo get_stylesheet_directory_uri(); ?>/images/precios-convenios-los-camachos.png" alt="precios convenios los camachos">
 		</div>
 
 		<div class="col-xs-12 col-sm-10 col-md-8 ml-auto mr-auto">

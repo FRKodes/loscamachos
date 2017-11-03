@@ -67,7 +67,7 @@ body
 			color white
 
 .big-background
-	height 300px !important
+	height 900px !important
 	background transparent
 	background-size cover
 	a
@@ -76,9 +76,8 @@ body
 		display block
 		overflow hidden
 		position relative
-		background rgba(red, .2)
-		
-
+		&:hover
+			color rgba(amarillo-00, .5) !important
 .main-banner-home
 	width 100%
 	display block
@@ -116,6 +115,7 @@ h1.banner-title
 	position relative
 	z-index 11
 	margin-top 120px
+	text-shadow 4px 4px 2px rgba(150, 150, 150, 1)
 	span
 		font-size .4em
 		letter-spacing 3px
@@ -241,6 +241,9 @@ h2.title
 			height auto
 			width 75%
 			display inline-block
+		a
+			&:hover
+				color rgba(azul-01, .7)
 .slick-arrow
 	color transparent
 	position absolute
@@ -518,6 +521,12 @@ img.convenios
 	label
 		font-weight 100
 		font-size .8em
+	&.error
+		label
+			color rgba(red, .6)
+			font-weight bold
+		.form-control
+			border 1px solid red
 .form-control
 	background-color azul-00
 	border-radius 0
@@ -533,6 +542,16 @@ img.convenios
 	border-radius 0
 	padding-left 2em
 	padding-right 2em
+.form
+	position relative
+.sent_mail_alert
+	background rgba(azul-01, .95)
+	color white
+	text-align center
+	padding 20px 30px
+	position absolute
+	top 50px
+	display none
 footer
 	color white
 	font-weight 100
@@ -648,12 +667,15 @@ footer
 	.navbar-collapse
 		justify-content flex-end
 		li
-			margin 0
+			margin 0 10px
 			display inline-block
+			&.active a
+				background white
+				color black
 			a
 				padding 5px
 	.big-background
-		height 480px !important
+		height 680px !important
 	.main-banner-home
 		height 480px
 		margin-top -70px
@@ -786,6 +808,8 @@ footer
 				a
 					color azul-01
 					font-weight 700
+	.routes-selector
+		display none
 	.maps-right
 		padding-left 0
 		.map
@@ -816,7 +840,7 @@ footer
 		margin 0 auto
 		background none
 	.big-background
-		height 570px !important
+		height 670px !important
 	.main-banner-home
 		height 570px
 		h1.banner-title

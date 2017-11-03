@@ -3273,21 +3273,99 @@ function onYouTubePlayerAPIReady() {
 	jQuery.fn.manageYTPProgress = jQuery.mbYTPlayer.manageYTPProgress;
 
 })(jQuery);
+/*-------------------------------
+	VALIDATE.JS
+	A barebones jQuery validation plugin
+	@author Todd Francis
+	@version 1.0.3
+-------------------------------*/
+;(function(r,d,l){d.fn.validate=function(m){return this.each(function(){var f=d(this);if(l===f.data("validate")){var j=new d.validate(m,f);f.data("validate",j)}})};d.validate=function(m,f){function j(a,b){-1==d.inArray(a,b)&&b.push(a);return b}function p(a){a=a.slice(a.indexOf("[")+1,-1);return-1!==a.indexOf(",")?a.split(","):[a]}function n(a){for(var b=[],c=0;c<a.length;c++){var g=a[c],d=[],h=g.indexOf("[");-1!==h&&(d=d.concat(p(g)),g=g.slice(0,h));b.push({rule:g,args:d})}return b}var h=d.extend(!0,
+{debug:!1,autoDetect:!1,visibleOnly:!0,beforeSubmit:function(){},singleError:function(){},overallError:function(){},singleSuccess:function(){},overallSuccess:function(){},regExp:{alpha:/^[a-zA-Z]*$/,numeric:/^[0-9]*$/,alphanumeric:/^[a-zA-Z0-9]*$/,url:/^(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/,email:/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/}},
+m),c=this,q=["checkGroupRequired","checkGroupMin","checkGroupMax"];c.$form=f;c.version="1.0.0";if(f!==l)f.on("submit",function(a){if(!c.validate()||h.debug)a.stopImmediatePropagation(),a.preventDefault()});c.validate=function(a){a="undefined"===typeof a?c.$form:a;var b=!1,e=d();h.beforeSubmit.call(c);c.fieldsToCheck(a).each(function(){var a=d(this);if((h.visibleOnly&&a.is(":visible")||!h.visibleOnly)&&!c.checkField(a))b=!0,e=e.add(a)});b?h.overallError.call(c,a,e):!1===h.overallSuccess.call(c,a)&&
+(b=!0);return!b};c.checkField=function(a){var b=a.data("validate")?a.data("validate").split("|"):[];a.val();var e=[];if(h.autoDetect&&a.is('input:not([type="checkbox"], [type="radio"])')&&"text"!=a.attr("type"))switch(e=a.attr("type"),e){case "number":b=j("numeric",b);break;default:b=j(e,b)}b=n(b);e=c.checkValue(a,b);if(e instanceof Object)return h.singleError.call(c,a,e),!1;h.singleSuccess.call(c,a,b);return!0};c.checkValue=function(a,b){if(!b)return!0;b="string"==typeof b?n(b):b;for(var e=[],g=
+0;g<b.length;g++){var f=b[g].rule,k="",j=[a].concat(b[g].args.slice());f.indexOf("[");k="check"+f.charAt(0).toUpperCase()+f.slice(1);"checkRequired"==k&&a.is('input[type="checkbox"]')?k="checkRequiredCheckbox":-1!=d.inArray(k,q)&&(f=d('input[type="checkbox"]',a),f.length||(f=d('input[type="radio"]',a)),j=[f].concat(j.slice(1)));c[k]instanceof Function?c[k].apply(c,j)||e.push(b[g]):h.regExp[b[g].rule]?""!==a.val()&&!c.checkRegExp(a,b[g].rule)&&e.push(b[g]):e.push(b[g])}return 0<e.length?e:!0};c.fieldsToCheck=
+function(a){a=d("[data-validate]",a===l?c.$form:a);h.autoDetect&&(a=d("input[required]").add(a));return a};c.checkRequired=function(a){return 0<a.val().length?!0:!1};c.checkRequiredCheckbox=function(a){return a.is(":checked")};c.checkGroupRequired=function(a){return a.filter(":checked").length?!0:!1};c.checkGroupMin=function(a,b){return a.filter(":checked").length>=b};c.checkGroupMax=function(a,b){return a.filter(":checked").length<=b};c.checkCustomRegExp=function(a,b,c){if(""===a.val())return!0;
+b=RegExp(b,c);return a.val().match(b)?!0:!1};c.checkRegExp=function(a,b){return a.val().match(h.regExp[b])?!0:!1};c.checkMaxLength=function(a,b){return""===a.val()?!0:a.val().length<=b};c.checkMinLength=function(a,b){return""===a.val()?!0:a.val().length>=b};c.checkMax=function(a,b){return""===a.val()?!0:parseFloat(a.val())<=parseFloat(b)};c.checkMin=function(a,b){return""===a.val()?!0:parseFloat(a.val())>=parseFloat(b)}}})(window,jQuery);
+$(function(){	
+	var formSettings = {
+		singleError : function($field, rules){ 
+			$field.closest('.form-group').removeClass('valid').addClass('error');
+			$('.alert_fields').fadeIn();
+		},
+		singleSuccess : function($field, rules){ 
+			$field.closest('.form-group').removeClass('error').addClass('valid');
+			$('.alert_fields').fadeOut();
+		},
+		overallSuccess : function(){
+			var form    	= $('#contactForm'),
+				nombre		= form.find( "input[name='nombre']").val(),
+				correo		= form.find( "input[name='correo']").val(),
+				mensaje		= form.find( "textarea[name='mensaje']").val(),
+				action		= form.attr( "action"),
+				url			= action;
+
+			var posting = $.post(
+				url, { n: nombre, c: correo, m: mensaje }
+			);
+			posting.done(function( data ){
+				console.log('email sent! \n' + data );
+				$('#contactForm')[0].reset();
+				$('.sent_mail_alert').fadeIn().delay(3000).fadeOut();
+			});
+		},
+		overallError : function($form, fields){ /*Do nothing, just show the error fields*/ },
+			autoDetect : true, debug : true
+		};
+	var $validate = $('#contactForm').validate(formSettings).data('validate');
+});
 function initMap() {
 	var map = new google.maps.Map(document.getElementById('map0'), {
 		zoom: 14,
 		center: {lat: 20.695178, lng: -103.348580},
 		mapTypeControl: false,
-		mapTypeId: 'terrain'
+		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
 
 
-	// var map1 = new google.maps.Map(document.getElementById('map1'), {
-	// 	zoom: 14,
-	// 	center: {lat: 0, lng: -180},
-	// 	mapTypeControl: false,
-	// 	mapTypeId: 'terrain'
-	// });
+	var map1 = new google.maps.Map(document.getElementById('map1'), {
+		zoom: 14,
+		center: {lat: 20.695178, lng: -103.348580},
+		mapTypeControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
+
+	var map2 = new google.maps.Map(document.getElementById('map2'), {
+		zoom: 3,
+		center: {lat: 20.695178, lng: -103.348580},
+		mapTypeControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
+
+	var map3 = new google.maps.Map(document.getElementById('map3'), {
+		zoom: 5,
+		center: {lat: 20.695178, lng: -103.348580},
+		mapTypeControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
+
+	var map4 = new google.maps.Map(document.getElementById('map4'), {
+		zoom: 7,
+		center: {lat: 20.695178, lng: -103.348580},
+		mapTypeControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
+
+	var map5 = new google.maps.Map(document.getElementById('map5'), {
+		zoom: 9,
+		center: {lat: 20.695178, lng: -103.348580},
+		mapTypeControl: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
 
 
 	var flightPlanCoordinates = [
@@ -3313,6 +3391,27 @@ function initMap() {
 
 
 (function($) {
+
+	$('.ver-mas-rutas').on('click', function () {
+		console.log('clicked!!');
+		$('.inner-routes-list-container').toggleClass('opened');
+	});
+
+	$('.inner-routes-list a, .routes-list a').on('click', function () {
+		var this_element_attr = $(this).attr('class');
+		$('.routes-list li').removeClass('active');
+		$(this).parent().addClass('active');
+		$('.map').hide();
+		$('.' + this_element_attr).show();
+		$('.inner-routes-list-container').removeClass('opened');
+	});
+
+	setTimeout(function(){
+		$('.hide-this').addClass('hidden');
+	}, 1000);
+
+
+
 	$(document).ready(function() {
 		/* IF YOU WANT TO APPLY SOME BASIC JQUERY TO REMOVE THE VIDEO BACKGROUND ON A SPECIFIC VIEWPORT MANUALLY
 		 var is_mobile = false;
@@ -3400,9 +3499,6 @@ $('.zones-container').slick({
 		dots: true
 	  }
 	}
-	// You can unslick at a given breakpoint now by adding:
-	// settings: "unslick"
-	// instead of a settings object
   ]
 });
 
@@ -3423,8 +3519,5 @@ $('.tickets-container').slick({
 		dots: true
 	  }
 	}
-	// You can unslick at a given breakpoint now by adding:
-	// settings: "unslick"
-	// instead of a settings object
   ]
 });
