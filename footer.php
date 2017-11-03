@@ -20,8 +20,8 @@
 					<div class="row">
 						<div class="col-xs-12 col-md-6 social">
 							<ul class="social-links">
-								<li><a target="_blank" href="https://www.facebook.com/LCamachos" class="icon-facebook"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.svg" alt="Los camachos parque acuático en facebook"></a></li>
-								<li><a target="_blank" href="https://www.youtube.com" class="icon-youtube"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube.svg" alt="Los camachos parque acuático en instagram"></a></li>
+								<li><a target="_blank" href="https://www.facebook.com/LCamachos" class="icon-facebook"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.svg" alt="Los camachos parque acuático en Facebook"></a></li>
+								<li><a target="_blank" href="https://www.youtube.com/channel/UCybXr8rnl6k7iJiSl7aFr6w" class="icon-youtube"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube.svg" alt="Los camachos parque acuático en YouTube"></a></li>
 							</ul>
 						</div>
 						<div class="col-xs-12 col-md-6 text-center likes">

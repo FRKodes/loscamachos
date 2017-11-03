@@ -21,6 +21,10 @@
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-aqua-racer-01.jpg" alt="atracciones aqua racer 01"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-aqua-racer-02.jpg" alt="atracciones aqua racer 02"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-aqua-racer-03.jpg" alt="atracciones aqua racer 03"></div>
+						<div class="photo-video">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-aqua-racer-03.jpg" alt="atracciones aqua racer video">
+							<iframe width="100" height="100" src="https://www.youtube.com/embed/Xix9Qun8lAY" frameborder="0" allowfullscreen></iframe>
+						</div>
 					</div>
 					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
 				</div>
@@ -36,6 +40,10 @@
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-aqua-tubos-01.jpg" alt="atracciones aquatubos 01"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-aqua-tubos-02.jpg" alt="atracciones aquatubos 02"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-aqua-tubos-03.jpg" alt="atracciones aquatubos 03"></div>
+						<div class="photo-video">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-aqua-tubos-02.jpg" alt="atracciones aquatubos 02">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/PX7ompj9_1A?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
 					</div>
 					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
 				</div>
@@ -51,6 +59,10 @@
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-kamikaze-01.jpg" alt="atracciones kamikaze 01"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-kamikaze-02.jpg" alt="atracciones kamikaze 02"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-kamikaze-03.jpg" alt="atracciones kamikaze 03"></div>
+						<div class="photo-video">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-kamikaze-02.jpg" alt="atracciones kamikaze 02">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/NbJWTIcy1ss?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
 					</div>
 					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
 				</div>

@@ -80,23 +80,23 @@ get_header(); ?>
 				<div class="col-xs-12">
 					<div class="routes-container">
 						<div class="route-item">
-							<div class="image"><a href="/contacto"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-minerva.jpg" alt="ruta hacia los camachos desde la minerva"></a></div>
-							<div class="title mayus paytone azul-01"><a class="azul-01" href="/contacto">La Minerva</a></div>
+							<div class="image"><a href="/contacto#maps-container"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-minerva.jpg" alt="ruta hacia los camachos desde la minerva"></a></div>
+							<div class="title mayus paytone azul-01"><a class="azul-01" href="/contacto#maps-container">La Minerva</a></div>
 						</div>
 						<div class="route-item">
-							<div class="image"><a href="/contacto"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-del-sol.jpg" alt="ruta hacia los camachos desde plaza del sol"></a></div>
-							<div class="title mayus paytone azul-01"><a class="azul-01" href="/contacto">Plaza del sol</a></div>
+							<div class="image"><a href="/contacto#maps-container"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-del-sol.jpg" alt="ruta hacia los camachos desde plaza del sol"></a></div>
+							<div class="title mayus paytone azul-01"><a class="azul-01" href="/contacto#maps-container">Plaza del sol</a></div>
 						</div>
 						<div class="route-item">
-							<div class="image"><a href="/contacto"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-patria.jpg" alt="ruta hacia los camachos desde plaza patria"></a></div>
-							<div class="title mayus paytone azul-01"><a class="azul-01" href="/contacto">Plaza Patria</a></div>
+							<div class="image"><a href="/contacto#maps-container"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-patria.jpg" alt="ruta hacia los camachos desde plaza patria"></a></div>
+							<div class="title mayus paytone azul-01"><a class="azul-01" href="/contacto#maps-container">Plaza Patria</a></div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xs-12">
 					<div class="button-rutas">
-						<a href="/contacto">
+						<a href="/contacto#maps-container">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-los-camachos.svg" alt="rutas los camachos">
 							<div class="white-block paytone amarillo-00 mayus">Ver + rutas</div>
 						</a>

@@ -12,7 +12,7 @@
 </div>
 
 
-<div class="maps-container container">
+<div class="maps-container container" id="maps-container">
 	<div class="row">
 		
 		<div class="maps-left hidden d-md-block col-md-3">
