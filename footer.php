@@ -60,6 +60,7 @@
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
+<script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
 <?php wp_footer(); ?>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR2bxbHLtJj9agfUxeojUUiusyxKaxso8&callback=initMap"></script>
 </body>

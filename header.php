@@ -31,6 +31,18 @@
 	  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=528338034026476';
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="fb-livechat">
+		<div class="ctrlq fb-overlay"></div>
+		<div class="fb-widget">
+			<div class="ctrlq fb-close"></div>
+			<div class="fb-page" data-href="https://www.facebook.com/LCamachos/" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false">
+				<blockquote cite="https://www.facebook.com/digital.inspiration/" class="fb-xfbml-parse-ignore"> </blockquote>
+			</div>
+			<div id="fb-root"></div>
+		</div>
+		<a href="https://m.me/LCamachos" title="Mándanos un mensaje en Facebook" class="ctrlq fb-button"></a>
+	</div>
+
 	<div id="page" class="site">
 		<header id="masthead" class="site-header" role="banner">
 			<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>	

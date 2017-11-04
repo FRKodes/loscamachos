@@ -45,11 +45,15 @@
 				<div class="photo">
 					<div class="photos-container">
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-snacks.jpg" alt="servicios los camachos snacks"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-snacks-02.jpg" alt="servicios los camachos snacks 02"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-snacks-03.jpg" alt="servicios los camachos snacks 03"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-snacks-05.jpg" alt="servicios los camachos snacks 05"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-snacks-06.jpg" alt="servicios los camachos snacks 06"></div>
 					</div>
 					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
 				</div>
 				<div class="info">
-					<h2 class="title mayus paytone">snaks</h2>
+					<h2 class="title mayus paytone">snacks</h2>
 					<p>Después de un chapuzón nunca está de más un aperitivo. Checa nuestros productos.</p>
 				</div>
 			</div>
@@ -96,7 +100,9 @@
 			<div class="atraccion-item col-xs-12 col-md-6 col-lg-4">
 				<div class="photo">
 					<div class="photos-container">
-						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-mini-aqua-racer-01.jpg" alt="atracciones mini aqua 01"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-asoleadores-01.jpg" alt="servicios los camachos asoleadores 01"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-asoleadores-02.jpg" alt="servicios los camachos asoleadores 02"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-asoleadores-03.jpg" alt="servicios los camachos asoleadores 03"></div>
 					</div>
 					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
 				</div>
@@ -114,7 +120,7 @@
 					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
 				</div>
 				<div class="info">
-					<h2 class="title mayus paytone">enfermeria</h2>
+					<h2 class="title mayus paytone">enfermería</h2>
 					<p>A tu total disposición para cualquier emergencia imprevista.</p>
 				</div>
 			</div>
@@ -122,7 +128,9 @@
 			<div class="atraccion-item col-xs-12 col-md-6 col-lg-4">
 				<div class="photo">
 					<div class="photos-container">
-						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-mini-aqua-racer-01.jpg" alt="atracciones mini aqua 01"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-terraza-02.jpg" alt="servicios-los-camachos-terraza-02"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-terraza.jpg" alt="servicios-los-camachos-terraza"></div>
+
 					</div>
 					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
 				</div>
@@ -148,26 +156,16 @@
 			<div class="atraccion-item col-xs-12 col-md-6 col-lg-4">
 				<div class="photo">
 					<div class="photos-container">
-						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-mini-aqua-racer-01.jpg" alt="atracciones mini aqua 01"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-area-infantil-02.jpg" alt="servicios los camachos area infantil 02"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-area-infantil-03.jpg" alt="servicios los camachos area infantil 03"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-area-infantil-00.jpg" alt="servicios los camachos area infantil 00"></div>
+						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/servicios-los-camachos-area-infantil.jpg" alt="servicios los camachos area infantil"></div>
 					</div>
 					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
 				</div>
 				<div class="info">
 					<h2 class="title mayus paytone">área infantil</h2>
 					<p>Tenemos un lugar dedicado a que los más pequeños, disfruten al máximo su experiencia en Los Camachos.</p>
-				</div>
-			</div>
-
-			<div class="atraccion-item col-xs-12 col-md-6 col-lg-4">
-				<div class="photo">
-					<div class="photos-container">
-						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-mini-aqua-racer-01.jpg" alt="atracciones mini aqua 01"></div>
-					</div>
-					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
-				</div>
-				<div class="info">
-					<h2 class="title mayus paytone">pantalla</h2>
-					<p>Disfruta tu programación favorita mientras la pasas increíble en nuestras instalaciones.</p>
 				</div>
 			</div>
 

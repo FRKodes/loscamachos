@@ -62,12 +62,23 @@
 	<div class="container relative">
 		<div class="cicle-right-home prices"></div>
 		<div class="tickets-container">
-			<div class="ticket-item">
-				<figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/precios-ticket-blanco.png" alt="precios ticket blanco"></figure>
-				<div class="download"><a class="paytone" href="#">Descargar</a></div>
-				<div class="share"><a class="paytone icon-facebook" href="#">Enviar a un amigo</a></div>
-			</div>
-			<div class="ticket-item">
+
+			<?php
+			$the_query_main = new WP_Query( array('post_type' => 'cupon', 'posts_per_page' => 10, 'orderby'=> 'order_menu','order'=>'ASC') );
+
+			while ( $the_query_main->have_posts() ) : $the_query_main->the_post();?>
+				<div class="ticket-item">
+					<figure><?php the_post_thumbnail('large'); ?></figure>
+					<div class="white text-center coupon-text"><?php the_content(); ?></div>
+					<div class="download"><a class="paytone" href="<?php the_field('pdf'); ?>" target="_blank">Descargar</a></div>
+					<div class="share"><a target="_blank" class="paytone icon-facebook" href="mailto:?subject=Hey!+Mira+este+cupón+vamos+a+los+camachos.&body=Descarga+este+cupón+para+ir+a+Los+Camachos+parque+acuático,+la+pasaremos+genial!!!.%0D%0A%0D%0ALink+de+descarga:+%0D%0A%0D%0A+<?php the_field('pdf');?>.">Enviar a un amigo</a></div>
+				</div><?php 
+			wp_reset_postdata();
+			endwhile;?>
+
+
+			
+			<!-- <div class="ticket-item">
 				<figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/precios-ticket-azul.png" alt="precios ticket azul"></figure>
 				<div class="download"><a class="paytone" href="#">Descargar</a></div>
 				<div class="share"><a href="#" class="paytone icon-facebook">Enviar a un amigo</a></div>
@@ -76,7 +87,7 @@
 				<figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/precios-ticket-amarillo.png" alt="precios ticket amarillo"></figure>
 				<div class="download"><a class="paytone" href="#">Descargar</a></div>
 				<div class="share"><a href="#" class="paytone icon-facebook">Enviar a un amigo</a></div>
-			</div>
+			</div> -->
 		</div>
 		
 	</div>

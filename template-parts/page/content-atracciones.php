@@ -78,6 +78,10 @@
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-toboganes-01.jpg" alt="atracciones toboganes 01"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-toboganes-02.jpg" alt="atracciones toboganes 02"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-toboganes-03.jpg" alt="atracciones toboganes 03"></div>
+						<div class="photo-video">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-toboganes-03.jpg" alt="atracciones toboganes 03">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/XaAYZSNGfU8?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
 					</div>
 					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
 				</div>
@@ -107,6 +111,11 @@
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-infantil-01.jpg" alt="atracciones infantil 01"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-infantil-02.jpg" alt="atracciones infantil 02"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-infantil-03.jpg" alt="atracciones infantil 03"></div>
+						<div class="photo-video">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-infantil-03.jpg" alt="atracciones infantil 03">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/HHzwp0y8caE?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+
 					</div>
 					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
 				</div>
@@ -122,6 +131,11 @@
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-mini-aqua-racer-01.jpg" alt="atracciones mini aqua 01"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-mini-aqua-racer-02.jpg" alt="atracciones mini aqua 02"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-mini-aqua-racer-03.jpg" alt="atracciones mini aqua 03"></div>
+						<div class="photo-video">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-mini-aqua-racer-03.jpg" alt="atracciones mini aqua 03">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/R-shhQrT_EU?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+
 					</div>
 					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
 				</div>

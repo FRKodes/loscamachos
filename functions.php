@@ -23,21 +23,21 @@ add_action( 'wp_enqueue_scripts', 'get_my_styles_and_scripts' );
 
 
 
-// add_action( 'init', 'create_home_item_post_type' );
-// function create_home_item_post_type() {
-//   register_post_type( 'links_home',
-// 	array(
-// 	  'labels' => array(
-// 		'name' => __( 'Links Producto(s) Destacado(s)' ),
-// 		'singular_name' => __( 'Link Producto(s) Destacado(s)' ),
-// 		'add_new' => __( 'Agregar Link Producto(s) Destacado(s)' )
-// 	  ),
-// 	  'public' => true,
-// 	  'has_archive' => true,
-// 	  'supports'=> array('title', 'editor', 'thumbnail', 'page-attributes'),
-// 	)
-//   );
-// }
+add_action( 'init', 'create_cupon_post_type' );
+function create_cupon_post_type() {
+  register_post_type( 'cupon',
+	array(
+	  'labels' => array(
+		'name' => __( 'Cupones' ),
+		'singular_name' => __( 'Cupón' ),
+		'add_new' => __( 'Agregar cupón' )
+	  ),
+	  'public' => true,
+	  'has_archive' => false,
+	  'supports'=> array('title', 'editor', 'thumbnail', 'page-attributes'),
+	)
+  );
+}
 
 // add_action( 'init', 'create_product_post_type' );
 // function create_product_post_type() {
