@@ -20,6 +20,10 @@ get_header(); ?>
 		<section class="big-background">
 			<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=P7wAVpz4fZ4',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
 		    <!-- <div class="pattern"></div> -->
+		    <h1 class="text-center paytone banner-title">
+		    	¡VISÍTANOS HOY!<br>
+		    	<span class="roboto">DESCUBRE LA DIVERSIÓN</span>
+		    </h1>
 		</section>
 		
 		<!-- <div class="container-fluid">

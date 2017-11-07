@@ -96,6 +96,10 @@
 					<div class="photos-container">
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-tornado-01.jpg" alt="atracciones tornado 01"></div>
 						<div class="photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-tornado-02.jpg" alt="atracciones tornado 02"></div>
+						<div class="photo-video">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-tornado-01.jpg" alt="atracciones tornado 01">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/JP1fqoM96JE?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
 					</div>
 					<div class="circle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas los camachos"></div>
 				</div>
@@ -153,9 +157,10 @@
 <div class="back-azul-00">
 	<div class="container">
 		<div class="atracciones-gallery">
-			<div class="gallery-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-kamikaze-01.jpg" alt=""></div>
-			<div class="gallery-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-kamikaze-01.jpg" alt=""></div>
-			<div class="gallery-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-kamikaze-01.jpg" alt=""></div>
+			<div class="gallery-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-galeria-01.jpg" alt="atracciones galeria imagen 01"></div>
+			<div class="gallery-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-galeria-02.jpg" alt="atracciones galeria imagen 02"></div>
+			<div class="gallery-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-galeria-03.jpg" alt="atracciones galeria imagen 03"></div>
+			<div class="gallery-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-galeria-04.jpg" alt="atracciones galeria imagen 04"></div>
 		</div>
 		
 		<div class="atracciones-map">
@@ -166,28 +171,28 @@
 			<div class="zone-item purple">
 				<div class="title paytone mayus">Zona Morada</div>
 				<div class="info-container">
-					<p>01 Kamikaze</p>
-					<p>02 Aquatubos</p>
-					<p>03 Toboganes</p>
-					<p>04 Canchas</p>
-					<p>05 Juegos infantiles</p>
-					<p>06 Trampolines</p>
-					<p>07 Vestidores Renta</p>
-					<p>08 Enfermería</p>
-					<p>09 Vestidores Generales</p>
-					<p>10 Carnes Asadas</p>
+					<p><span class="purple">01</span> Kamikaze</p>
+					<p><span class="purple">02</span> Aquatubos</p>
+					<p><span class="purple">03</span> Toboganes</p>
+					<p><span class="purple">04</span> Canchas</p>
+					<p><span class="purple">05</span> Juegos infantiles</p>
+					<p><span class="purple">06</span> Trampolines</p>
+					<p><span class="purple">07</span> Vestidores Renta</p>
+					<p><span class="purple">08</span> Enfermería</p>
+					<p><span class="purple">09</span> Vestidores Generales</p>
+					<p><span class="purple">10</span> Carnes Asadas</p>
 				</div>
 			</div>
 			<div class="zone-item green">
 				<div class="title paytone mayus">Zona Verde</div>
 				<div class="info-container">
-					<p>11 Trajes</p>
-					<p>12 Helados</p>
-					<p>13 Comida</p>
-					<p>14 Bebidas</p>
-					<p>15 Lonches</p>
-					<p>16 Snack</p>
-					<p>17 Zona infantil</p>
+					<p><span class="green">11</span> Trajes</p>
+					<p><span class="green">12</span> Helados</p>
+					<p><span class="green">13</span> Comida</p>
+					<p><span class="green">14</span> Bebidas</p>
+					<p><span class="green">15</span> Lonches</p>
+					<p><span class="green">16</span> Snack</p>
+					<p><span class="green">17</span> Zona infantil</p>
 					<p>&nbsp;</p>
 					<p>&nbsp;</p>
 					<p>&nbsp;</p>
@@ -196,12 +201,12 @@
 			<div class="zone-item blue">
 				<div class="title paytone mayus">Zona Azul</div>
 				<div class="info-container">
-					<p>18 Tobogán infantil</p>
-					<p>19 Aquatubo</p>
-					<p>20 Popote</p>
-					<p>21 Mini racer</p>
-					<p>22 Tornado</p>
-					<p>23 Aquaracer</p>
+					<p><span class="blue">18</span> Tobogán infantil</p>
+					<p><span class="blue">19</span> Aquatubo</p>
+					<p><span class="blue">20</span> Popote</p>
+					<p><span class="blue">21</span> Mini racer</p>
+					<p><span class="blue">22</span> Tornado</p>
+					<p><span class="blue">23</span> Aquaracer</p>
 					<p>&nbsp;</p>
 					<p>&nbsp;</p>
 					<p>&nbsp;</p>
@@ -211,12 +216,30 @@
 		</div>
 
 		<div class="icons-container">
-			<div class="icon-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-banos.svg" alt="atracciones icon banos"></div>
-			<div class="icon-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-estacionamiento.svg" alt="atracciones icon estacionamiento"></div>
-			<div class="icon-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-no-alcohol.svg" alt="atracciones icon no alcohol"></div>
-			<div class="icon-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-no-cristal.svg" alt="atracciones icon no cristal"></div>
-			<div class="icon-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-no-perros.svg" alt="atracciones icon no perros"></div>
-			<div class="icon-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-restaurant.svg" alt="atracciones icon restaurant"></div>
+			<div class="icon-item">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-banos.svg" alt="atracciones icon banos">
+				<p class="mayus white mini-text">Baños</p>
+			</div>
+			<div class="icon-item">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-estacionamiento.svg" alt="atracciones icon estacionamiento">
+				<p class="mayus white mini-text">Estacionamiento</p>
+			</div>
+			<div class="icon-item">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-no-alcohol.svg" alt="atracciones icon no alcohol">
+				<p class="mayus white mini-text">No Alcohol</p>
+			</div>
+			<div class="icon-item">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-no-cristal.svg" alt="atracciones icon no cristal">
+				<p class="mayus white mini-text">No vidrio</p>
+			</div>
+			<div class="icon-item">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-no-perros.svg" alt="atracciones icon no perros">
+				<p class="mayus white mini-text">No mascotas</p>
+			</div>
+			<div class="icon-item">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-restaurant.svg" alt="atracciones icon restaurant">
+				<p class="mayus white mini-text">Comida</p>
+			</div>
 		</div>
 
 	</div>

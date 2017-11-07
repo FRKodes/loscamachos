@@ -69,25 +69,13 @@
 			while ( $the_query_main->have_posts() ) : $the_query_main->the_post();?>
 				<div class="ticket-item">
 					<figure><?php the_post_thumbnail('large'); ?></figure>
+					<p class="coupon-title"><?php the_title(); ?></p>
 					<div class="white text-center coupon-text"><?php the_content(); ?></div>
 					<div class="download"><a class="paytone" href="<?php the_field('pdf'); ?>" target="_blank">Descargar</a></div>
 					<div class="share"><a target="_blank" class="paytone icon-facebook" href="mailto:?subject=Hey!+Mira+este+cupón+vamos+a+los+camachos.&body=Descarga+este+cupón+para+ir+a+Los+Camachos+parque+acuático,+la+pasaremos+genial!!!.%0D%0A%0D%0ALink+de+descarga:+%0D%0A%0D%0A+<?php the_field('pdf');?>.">Enviar a un amigo</a></div>
 				</div><?php 
 			wp_reset_postdata();
 			endwhile;?>
-
-
-			
-			<!-- <div class="ticket-item">
-				<figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/precios-ticket-azul.png" alt="precios ticket azul"></figure>
-				<div class="download"><a class="paytone" href="#">Descargar</a></div>
-				<div class="share"><a href="#" class="paytone icon-facebook">Enviar a un amigo</a></div>
-			</div>
-			<div class="ticket-item">
-				<figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/precios-ticket-amarillo.png" alt="precios ticket amarillo"></figure>
-				<div class="download"><a class="paytone" href="#">Descargar</a></div>
-				<div class="share"><a href="#" class="paytone icon-facebook">Enviar a un amigo</a></div>
-			</div> -->
 		</div>
 		
 	</div>
@@ -121,21 +109,28 @@
 </div>
 
 <div class="container p-bottom-40 p-top-40 text-center">
+
+	<?php
+	$the_query_convenio = new WP_Query( array('post_type' => 'logo_convenio', 'posts_per_page' => 50, 'orderby'=> 'order_menu','order'=>'ASC') );
+
+	while ( $the_query_convenio->have_posts() ) : $the_query_convenio->the_post();?>
+		<div class="logo-item">
+			<figure><?php the_post_thumbnail(); ?></figure>
+		</div><?php 
+		wp_reset_postdata();
+	endwhile;?>
 		
-		<div class="logo-item">
-			<figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/precios-logo-albergue-pinos.svg" alt="precios logo albergue pinos"></figure>
-		</div>
-		<div class="logo-item">
+		<!-- <div class="logo-item">
 			<figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/precios-logo-infra.svg" alt="precios logo infra"></figure>
 		</div>
 		<div class="logo-item">
 			<figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/precios-logo-proyeccion-administracion-empresarial.svg" alt="precios logo-proyeccion administracion empresarial"></figure>
-		</div>
+		</div> -->
 
-	<div class="logo-item">
+	<!-- <div class="logo-item">
 		<figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/precios-logo-sistecozome.svg" alt="precios logo sistecozome"></figure>
 	</div>
 	<div class="logo-item">
 		<figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/precios-logo-walmart.svg" alt="precios logo walmart"></figure>
-	</div>
+	</div> -->
 </div>

@@ -13,13 +13,10 @@ function register_my_menus() {
 add_action( 'init', 'register_my_menus' );
 
 function get_my_styles_and_scripts() {
-	wp_enqueue_style( 'style.css', get_stylesheet_uri(), array(), '1.0');
+	wp_enqueue_style( 'style.css', get_stylesheet_uri(), array(), '1.1');
 	wp_enqueue_script( 'all.js', get_template_directory_uri() . '/all.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'get_my_styles_and_scripts' );
-
-
-
 
 
 
@@ -39,22 +36,23 @@ function create_cupon_post_type() {
   );
 }
 
-// add_action( 'init', 'create_product_post_type' );
-// function create_product_post_type() {
-//   register_post_type( 'producto',
-// 	array(
-// 	  'labels' => array(
-// 		'name' => __( 'Productos' ),
-// 		'singular_name' => __( 'Producto' ),
-// 		'add_new' => __( 'Agregar Producto' )
-// 	  ),
-// 	  'public' => true,
-// 	  'has_archive' => true,
-// 	  'supports'=> array('title', 'editor', 'thumbnail', 'page-attributes'),
-// 	)
-//   );
-//   flush_rewrite_rules();
-// }
+add_action( 'init', 'create_logo_convenio_post_type' );
+function create_logo_convenio_post_type() {
+  register_post_type( 'logo_convenio',
+	array(
+	  'labels' => array(
+		'name' => __( 'Logos Convenios' ),
+		'singular_name' => __( 'Logo Convenio' ),
+		'add_new' => __( 'Agregar Logo Convenio' )
+	  ),
+	  'public' => true,
+	  'has_archive' => true,
+	  'supports'=> array('title', 'editor', 'thumbnail', 'page-attributes'),
+	)
+  );
+  flush_rewrite_rules();
+}
+
 // add_action( 'init', 'create_product_taxonomy', 0 );
 
 // function create_product_taxonomy() {
