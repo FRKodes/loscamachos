@@ -14,34 +14,46 @@
 
 <div class="maps-container container" id="maps-container">
 	<div class="row" id="maps-container-minerva">
-		<div class="maps-left hidden d-md-block col-md-3" id="maps-container-patria">
+		<div class="maps-left hidden d-md-block col-md-3" id="maps-container-basilica">
 			<p class="mayus amarillo-00 paytone text-center routes-title" id="maps-container-del-sol">rutas</p>
-			<ul class="routes-list">
-				<li class="active"><a class="route-371" route-line="ruta_371" href="#show-route">371</a></li>
-				<li><a class="route-275-B" route-line="ruta_275" href="#show-route">275-B</a></li>
-				<li><a class="route-647" route-line="ruta_647" href="#show-route">647</a></li>
-				<li><a class="route-63" route-line="ruta_63" href="#show-route">63</a></li>
-				<li><a class="route-622" route-line="ruta_622" href="#show-route">622</a></li>
-				<li><a class="route-24" route-line="ruta_24" href="#show-route">24</a></li>
+			<ul class="routes-list" id="maps-container-alamo">
+				<li class="active" id="maps-container-catedral"><a class="route-minerva" route-line="ruta_minerva" href="#show-route">LA MINERVA</a></li>
+				<li id="maps-container-centro-16-sep"><a class="mayus route-del-sol" route-line="ruta_del_sol" href="#show-route">Plaza del Sol</a></li>
+				<li><a class="mayus route-basilica" route-line="ruta_basilica" href="#show-route">la Basílica Zapopan</a></li>
+				<li><a class="mayus route-alamo" route-line="ruta_alamo" href="#show-route">Glorieta del Álamo</a></li>
+				<li><a class="mayus route-catedral" route-line="ruta_catedral" href="#show-route">Catedral GDL</a></li>
+				<li><a class="mayus route-16-sep" route-line="ruta_16_sep" href="#show-route">16 de Sep y niños héroes</a></li>
+				<li><a class="mayus route-bandera" route-line="ruta_bandera" href="#show-route">Plaza de la Bandera</a></li>
 			</ul>
 		</div>
 
-		<div class="maps-right col-xs-12 col-md-9 relative">
+		<div class="maps-right col-xs-12 col-md-9 relative" id="maps-container-bandera">
 			<div class="routes-selector paytone mayus">
 				<a href="#ver-rutas" class="ver-mas-rutas amarillo-00">VER RUTAS</a>
 				<div class="inner-routes-list-container">
 					<ul class="inner-routes-list">
-						<li><a class="route-371" route-line="ruta_371" href="#">371</a></li>
-						<li><a class="route-275-B" route-line="ruta_275" href="#">275-B</a></li>
-						<li><a class="route-647" route-line="ruta_647" href="#">647</a></li>
-						<li><a class="route-63" route-line="ruta_63" href="#">63</a></li>
-						<li><a class="route-622" route-line="ruta_622" href="#">622</a></li>
-						<li><a class="route-24" route-line="ruta_24" href="#">24</a></li>
+						<li><a class="mayus route-minerva" route-line="ruta_minerva" href="#show-route">La minerva</a></li>
+						<li><a class="mayus route-del-sol" route-line="ruta_del_sol" href="#show-route">Plaza del sol</a></li>
+						<li><a class="mayus route-basilica" route-line="ruta_basilica" href="#show-route">Basilica zapopan</a></li>
+						<li><a class="mayus route-alamo" route-line="ruta_alamo" href="#show-route">El Álamo</a></li>
+						<li><a class="mayus route-catedral" route-line="ruta_catedral" href="#show-route">Catedral</a></li>
+						<li><a class="mayus route-16-sep" route-line="ruta_16_sep" href="#show-route">16 sep y nios héroes</a></li>
+						<li><a class="mayus route-bandera" route-line="ruta_bandera" href="#show-route">Plaza de la bandera</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="routes-disclaimer">
-				<p class="text-center azul-01">Los camiones salen cada hora y media a partir de las 6:20 a.m. El último camión de regreso sale a las 7:00 p.m.</p>	
+
+				<p class="text-center azul-01">
+					<span class="ruta hidden ruta_minerva red">Toma el 371 hasta tránsito, de ahí tomas la 165 ó 167 ¡hasta Los Camachos!</span>
+					<span class="ruta hidden ruta_del_sol red">Toma el 371 hasta tránsito, de ahí tomas la 165 ó 167 ¡hasta Los Camachos!</span>
+					<span class="ruta hidden ruta_basilica red">Toma la 631-A hasta tránsito, de ahí tomas la 165 ó 167 ¡hasta Los Camachos!</span>
+					<span class="ruta hidden ruta_alamo red">Toma la ruta 171 que lleva a 16 de Septiembre y Niños Héroes, de ahí el 54 hasta tránsito, luego tomas la 165 ó 167 ¡hasta Los Camachos!</span>
+					<span class="ruta hidden ruta_catedral red">Toma la ruta 275-B hasta tránsito, de ahí tomas la 165 ó 167 ¡hasta Los Camachos!</span>
+					<span class="ruta hidden ruta_16_sep red">Toma la ruta 54 hasta tránsito, de ahí tomar la 165 ó 167 ¡hasta Los Camachos!</span>
+					<span class="ruta hidden ruta_bandera red">Toma la ruta 275-B hasta tránsito, de ahí tomas la 165 ó 167 ¡hasta Los Camachos!</span>
+					<span>Los camiones salen cada hora y media a partir de las 6:20 a.m. El último camión de regreso sale a las 7:00 p.m.</span>
+				</p>	
 			</div>
 
 			<div id="map0" class="map route-371 d-xs-block"></div>

@@ -43,8 +43,9 @@
 							<p class="footer-title">¿Dónde estamos?</p>
 							<p>
 								Km.19 Nva. Carretera a Saltillo, Guadalajara, Jal. 45280 <br>
-								33 00 22 11 55 <br>
-								33 66 99 77 44
+								<a class="white" href="tel:01 800 080 1982">01 800 080 1982</a> <br>
+								<a class="white" href="tel:31224657">3122-4657</a> <br>
+								<a class="white" href="tel:31224034">3122-4034</a><br>
 							</p>
 						</div>
 						

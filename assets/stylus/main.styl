@@ -5,6 +5,7 @@ amarillo-00 = #f2ab2b
 purple-color = #7F0F7E
 green-color = #0F7F12
 blue-color = #0A24FB
+rojo = #de1f26
 .mini-text
 	font-size .75em
 .overflow-hidden
@@ -17,6 +18,8 @@ blue-color = #0A24FB
 	letter-spacing 3px
 .mayus
 	text-transform uppercase
+.red
+	color rojo
 .purple
 	color purple-color
 .green
@@ -186,6 +189,7 @@ body
 	height 900px !important
 	background transparent
 	background-size cover
+	position relative
 	a
 		width 100%
 		height 100%
@@ -198,6 +202,7 @@ body
 	background transparent url(./images/precios-top-banner-los-camachos.png) no-repeat center center
 	background-size cover
 	height 400px !important
+
 .main-banner-home
 	width 100%
 	display block
@@ -233,8 +238,10 @@ h1.banner-title
 	color white
 	position relative
 	z-index 11
-	margin-top 120px
 	text-shadow 4px 4px 2px rgba(150, 150, 150, 1)
+	width 100%
+	position absolute
+	bottom 50px
 	span
 		font-size .4em
 		letter-spacing 3px
@@ -652,6 +659,12 @@ img.convenios
 		margin-left auto
 		margin-right auto
 		font-size .8em
+		span
+			width 100%
+			display inline-block
+			font-weight bold
+			&.ruta.hidden
+				display none !important
 .maps-right
 	.map
 		height 420px
@@ -701,6 +714,10 @@ img.convenios
 footer
 	color white
 	font-weight 100
+	a
+		color white
+		&:hover
+			color white
 	.block-footer
 		border-top 1px solid amarillo-00
 		padding-top 20px
@@ -840,7 +857,7 @@ footer
 			margin-left -70%
 			margin-top -10%
 	h1.banner-title
-		margin-top 370px
+		font-size 3em
 	h2.title
 		font-size 2em
 		padding-left 50%
@@ -1005,7 +1022,7 @@ footer
 	.main-banner-home
 		height 800px
 		h1.banner-title
-			font-size 2.8em
+			font-size 3.2em
 			margin-top 650px
 	h2.title
 		font-size 2.4em
@@ -1073,6 +1090,9 @@ footer
 @media screen and (min-width: 1200px)
 	.navbar
 		width 1170px
+	h1.banner-title
+		font-size 3.6em
+		margin-top unset
 	.home-price-block
 		height 600px
 	.image-racer-home
