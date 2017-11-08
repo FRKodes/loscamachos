@@ -97,23 +97,23 @@ get_header(); ?>
 							<div class="title mayus paytone azul-01"><a class="azul-01" href="/loscamachos/contacto#maps-container-patria">Plaza Patria</a></div>
 						</div>-->
 						<div class="route-item">
-							<div class="image"><a href="/loscamachos/contacto#maps-container-basilica"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-patria.jpg" alt="ruta hacia los camachos desde la Basílica de Zapopan"></a></div>
+							<div class="image"><a href="/loscamachos/contacto#maps-container-basilica"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-rutas-catedral-zapopan.jpg" alt="ruta hacia los camachos desde la Basílica de Zapopan"></a></div>
 							<div class="title mayus paytone azul-01"><a class="azul-01" href="/loscamachos/contacto#maps-container-basilica">Basílica Zapopan</a></div>
 						</div>
 						<div class="route-item">
-							<div class="image"><a href="/loscamachos/contacto#maps-container-alamo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-patria.jpg" alt="ruta hacia los camachos desde la glorieta del Álamo"></a></div>
+							<div class="image"><a href="/loscamachos/contacto#maps-container-alamo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-rutas-alamo.jpg" alt="ruta hacia los camachos desde la glorieta del Álamo"></a></div>
 							<div class="title mayus paytone azul-01"><a class="azul-01" href="/loscamachos/contacto#maps-container-alamo">Glorieta del Álamo</a></div>
 						</div>
 						<div class="route-item">
-							<div class="image"><a href="/loscamachos/contacto#maps-container-bandera"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-patria.jpg" alt="ruta hacia los camachos desde la Plaza de la Bandera"></a></div>
+							<div class="image"><a href="/loscamachos/contacto#maps-container-bandera"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-rutas-plaza-bandera.jpg" alt="ruta hacia los camachos desde la Plaza de la Bandera"></a></div>
 							<div class="title mayus paytone azul-01"><a class="azul-01" href="/loscamachos/contacto#maps-container-bandera">Plaza de la Bandera</a></div>
 						</div>
 						<div class="route-item">
-							<div class="image"><a href="/loscamachos/contacto#maps-container-catedral"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-patria.jpg" alt="ruta hacia los camachos desde la Catedral de Guadalajara"></a></div>
+							<div class="image"><a href="/loscamachos/contacto#maps-container-catedral"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-rutas-catedral-gdl.jpg" alt="ruta hacia los camachos desde la Catedral de Guadalajara"></a></div>
 							<div class="title mayus paytone azul-01"><a class="azul-01" href="/loscamachos/contacto#maps-container-catedral">Catedral GDL</a></div>
 						</div>
 						<div class="route-item">
-							<div class="image"><a href="/loscamachos/contacto#maps-container-centro-16-sep"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rutas-plaza-patria.jpg" alt="ruta hacia los camachos desde 16 de Septiembre y Niños Héroes"></a></div>
+							<div class="image"><a href="/loscamachos/contacto#maps-container-centro-16-sep"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-rutas-ninos-heroes.jpg" alt="ruta hacia los camachos desde 16 de Septiembre y Niños Héroes"></a></div>
 							<div class="title mayus paytone azul-01"><a class="azul-01" href="/loscamachos/contacto#maps-container-centro-16-sep">16 de Sep y Niños Héroes</a></div>
 						</div>
 					</div>
