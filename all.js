@@ -3305,10 +3305,10 @@ $(function(){
 				url			= action;
 
 			var posting = $.post(
-				url, { n: nombre, c: correo, m: mensaje }
+				url, { nombre: nombre, correo: correo, mensaje: mensaje }
 			);
 			posting.done(function( data ){
-				console.log('email sent! \n' + data );
+				console.log('email sent!');
 				$('#contactForm')[0].reset();
 				$('.sent_mail_alert').fadeIn().delay(3000).fadeOut();
 			});
@@ -3519,8 +3519,9 @@ function initMap() {
 			strokeWeight: 7
 		});
 
-	console.log('--> ' + window.location.hash);
-
+	/*
+	 Checks the last url's piece to show the correct map and routes
+	 */
 	var full_url = window.location.hash;
 	full_url = full_url.split("#maps-container-");
 	if (full_url[1] !== undefined) {
@@ -3608,6 +3609,18 @@ function initMap() {
 
 (function($) {
 
+	page_url = window.location.href;
+	page_url = page_url.split('loscamachos.com.mx');
+	// page_url = page_url.split('loscamachos.dev');
+	// full_url = full_url.split("#maps-container-");
+	page_slug = page_url[1].replace("/", "");
+	page_slug = page_slug.replace("/", "");
+	console.log('Page --> ' + page_slug[1]);
+
+	if (page_slug[1] !== undefined) {
+		$('li.' + page_slug).addClass('active');
+	}
+
 	var $fb = {
 		delay: 125,
 		overlay: $(".fb-overlay"),
@@ -3640,30 +3653,16 @@ function initMap() {
 	});
 
 	$('.ver-mas-rutas').on('click', function () {
-		console.log('clicked!!');
 		$('.inner-routes-list-container').toggleClass('opened');
+	});
+
+	$('.routes-selector li a').on('click', function () {
+		console.log('clicked ver más');
+		$('.inner-routes-list-container').removeClass('opened');
 	});
 
 	$('.inner-routes-list a, .routes-list a').on('click', function () {
 		var this_element_attr = $(this).attr('class');
-		// $('.routes-list li').removeClass('active');
-		// $(this).parent().addClass('active');
-		// $('.map').hide();
-		// $('.' + this_element_attr).show();
-		// $('.inner-routes-list-container').removeClass('opened');
-		
-
-		// $.getJSON("callback=initMap",
-		//     function(json) {
-		//         console.log(json);              
-		//         userLat = (json.latitude);
-		//         userLng = (json.longitude);
-		//         var newPos = new google.maps.LatLng(userLat, userLng);
-		//         map.setOptions({
-		//             center: newPos
-		//         });
-		//     }
-		// );
 	});
 
 	setTimeout(function(){
@@ -3699,10 +3698,22 @@ function initMap() {
 })(jQuery);
 
 $('.prices-container').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  dots: true
+  	dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+  		{
+	  	  breakpoint: 768,
+	  	  settings: {
+	  		slidesToShow: 1,
+	  		slidesToScroll: 1,
+	  		infinite: true,
+	  		dots: true
+	  	  }
+	  	}
+	]
 });
 
 $('.routes-container').slick({
@@ -3734,6 +3745,7 @@ $('.photos-container').slick({
 	slidesToScroll: 1,
 	dots: true
 });
+
 
 $('.atracciones-gallery').slick({
 	infinite: true,

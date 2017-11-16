@@ -74,7 +74,7 @@ get_header(); ?>
 
 		<div class="back-azul-00 rutas-back">
 			<div class="cicle-left-home"></div>
-			<div class="cicle-right-home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-blanco.svg" alt="Olas en los camachos"></div>
+			<div class="cicle-right-home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wave-3-azul.svg" alt="Olas en los camachos"></div>
 			<div class="container rutas-home">
 				<div class="col-xs-12">
 					<h2 class="title-rutas paytone mayus">RUTAS EN CAMIÓN</h2>

@@ -36,8 +36,8 @@
 						<li><a class="mayus route-del-sol" route-line="ruta_del_sol" href="#show-route">Plaza del sol</a></li>
 						<li><a class="mayus route-basilica" route-line="ruta_basilica" href="#show-route">Basilica zapopan</a></li>
 						<li><a class="mayus route-alamo" route-line="ruta_alamo" href="#show-route">El Álamo</a></li>
-						<li><a class="mayus route-catedral" route-line="ruta_catedral" href="#show-route">Catedral</a></li>
-						<li><a class="mayus route-16-sep" route-line="ruta_16_sep" href="#show-route">16 sep y nios héroes</a></li>
+						<li><a class="mayus route-catedral" route-line="ruta_catedral" href="#show-route">Catedral GDL</a></li>
+						<li><a class="mayus route-16-sep" route-line="ruta_16_sep" href="#show-route">16 sep y niños héroes</a></li>
 						<li><a class="mayus route-bandera" route-line="ruta_bandera" href="#show-route">Plaza de la bandera</a></li>
 					</ul>
 				</div>
@@ -86,7 +86,7 @@
 					</div>
 					<div class="form-group">
 						<label for="Mensaje">Escribe aquí tu mensaje</label>
-						<input type="text" name="mensaje" class="form-control" data-validate="required">
+						<textarea name="mensaje" id="mensaje" class="form-control" data-validate="required" cols="30" rows="10"></textarea>
 					</div>
 					<div class="form-group"><input type="submit" class="btn btn-primary paytone amarillo-00 mayus btn-send" value="Enviar"></div>
 				</form>
