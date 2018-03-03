@@ -55,7 +55,16 @@
 						</div>
 					</div>
 				</div>
-
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 p-top-40">
+							<p>
+								Diseño y Desarrollo Web &nbsp; <a class="azul-00" href="http://www.atomcreativa.com/" target="_blank">Atom</a> &nbsp; + &nbsp; <a class="azul-00" href="http://blueterrier.mx/" target="_blank">Blue Terrier Studio</a>
+							</p>
+						</div>
+					</div>
+				</div>
 				<!-- <div class="credits">Desarrollado por: <a href="http://www.blueterrier.mx/" target="_blank" title="Made with love at Guadalajara Jaslico MX">BLUE TERRIER STUDIO</a></div> -->
 			</div>
 		</footer><!-- #colophon -->

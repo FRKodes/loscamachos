@@ -12,10 +12,10 @@ if (isset($_POST['correo'])) {
     $mail = new PHPMailer(true);
     $mail->From = $correo;
     $mail->FromName = $nombre;
-    // $mail->addAddress('parque@loscamachos.com.mx', 'Los Camachos');
-    $mail->addAddress('frkalderon@gmail.com', 'Los Camachos');
+    $mail->addAddress('parque@loscamachos.com.mx', 'Los Camachos');
+    // $mail->addAddress('frkalderon@gmail.com', 'Los Camachos');
     $mail->addReplyTo("parque@loscamachos.com.mx", "Reply");
-    // $mail->addBCC("frkalderon@gmail.com");
+    $mail->addBCC("frkalderon@gmail.com");
     $mail->isHTML(true);
     $mail->Subject = "Contacto Web Los Camachos ";
     $mail->Body = "<p>". $nombre ." escribió: </p>";
