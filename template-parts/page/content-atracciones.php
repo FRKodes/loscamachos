@@ -215,32 +215,7 @@
 			</div>
 		</div>
 
-		<div class="icons-container">
-			<div class="icon-item">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-banos.svg" alt="atracciones icon banos">
-				<p class="mayus white mini-text">Baños</p>
-			</div>
-			<div class="icon-item">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-estacionamiento.svg" alt="atracciones icon estacionamiento">
-				<p class="mayus white mini-text">Estacionamiento</p>
-			</div>
-			<div class="icon-item">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-no-alcohol.svg" alt="atracciones icon no alcohol">
-				<p class="mayus white mini-text">No Alcohol</p>
-			</div>
-			<div class="icon-item">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-no-cristal.svg" alt="atracciones icon no cristal">
-				<p class="mayus white mini-text">No vidrio</p>
-			</div>
-			<div class="icon-item">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-no-perros.svg" alt="atracciones icon no perros">
-				<p class="mayus white mini-text">No mascotas</p>
-			</div>
-			<div class="icon-item">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-restaurant.svg" alt="atracciones icon restaurant">
-				<p class="mayus white mini-text">Comida</p>
-			</div>
-		</div>
+		
 
 	</div>
 </div>

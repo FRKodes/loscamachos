@@ -12,19 +12,60 @@
  * @version 1.2
  */
 ?>
+		<div class="back-azul-00">
+			<div class="container">
+				<div class="icons-container">
+					<div class="icon-item">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-banos.svg" alt="atracciones icon banos">
+						<p class="mayus white mini-text">Baños</p>
+					</div>
+					<div class="icon-item">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-estacionamiento.svg" alt="atracciones icon estacionamiento">
+						<p class="mayus white mini-text">Estacionamiento</p>
+					</div>
+					<div class="icon-item">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/no-bocinas.svg" alt="atracciones icon no bocinas">
+						<p class="mayus white mini-text">No Bocinas</p>
+					</div>
+					<div class="icon-item">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-no-alcohol.svg" alt="atracciones icon no alcohol">
+						<p class="mayus white mini-text">No Alcohol</p>
+					</div>
+					<div class="icon-item">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-no-cristal.svg" alt="atracciones icon no cristal">
+						<p class="mayus white mini-text">No vidrio</p>
+					</div>
+					<div class="icon-item">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-no-perros.svg" alt="atracciones icon no perros">
+						<p class="mayus white mini-text">No mascotas</p>
+					</div>
+					<div class="icon-item">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/atracciones-icon-restaurant.svg" alt="atracciones icon restaurant">
+						<p class="mayus white mini-text">Comida</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+
 		</div><!-- #content -->
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="back-azul-01">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-md-6 social">
+						<div class="col-xs-12 col-md-4 social">
 							<ul class="social-links">
 								<li><a target="_blank" href="https://www.facebook.com/LCamachos" class="icon-facebook"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.svg" alt="Los camachos parque acuático en Facebook"></a></li>
 								<li><a target="_blank" href="https://www.youtube.com/channel/UCybXr8rnl6k7iJiSl7aFr6w" class="icon-youtube"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube.svg" alt="Los camachos parque acuático en YouTube"></a></li>
 							</ul>
 						</div>
-						<div class="col-xs-12 col-md-6 text-center likes">
+						<div class="col-xs-12 col-md-4 text-center newsletter-button-container">
+							<a href="http://eepurl.com/dqfEKT" target="_blank" class="btn btn-primary paytone amarillo-00 mayus btn-send newsletter">
+								SUSCRÍBETE AL NEWSLETTER
+							</a>
+						</div>
+						<div class="col-xs-12 col-md-4 text-center likes">
 							<div class="fb-like" data-href="https://www.facebook.com/LCamachos/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 						</div>
 					</div>
