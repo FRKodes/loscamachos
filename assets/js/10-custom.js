@@ -319,95 +319,31 @@ function initMap() {
 
 
 
-(function($) {
 
-	page_url = window.location.href;
-	page_url = page_url.split('loscamachos.com.mx');
-	// page_url = page_url.split('loscamachos.dev');
-	// full_url = full_url.split("#maps-container-");
-	page_slug = page_url[1].replace("/", "");
-	page_slug = page_slug.replace("/", "");
-	console.log('Page --> ' + page_slug[1]);
-
-	if (page_slug[1] !== undefined) {
-		$('li.' + page_slug).addClass('active');
+$(document).ready(function() {
+	/* IF YOU WANT TO APPLY SOME BASIC JQUERY TO REMOVE THE VIDEO BACKGROUND ON A SPECIFIC VIEWPORT MANUALLY
+	 var is_mobile = false;
+	if( $('.player').css('display')=='none') {
+		is_mobile = true;       
 	}
-
-	var $fb = {
-		delay: 125,
-		overlay: $(".fb-overlay"),
-		widget: $(".fb-widget"),
-		button: $(".fb-button")
-	};
-	setTimeout(function() {
-		$("div.fb-livechat").fadeIn();
-	}, $fb.delay * 8);
-	$(".ctrlq").on('click', function(e) {
-		e.preventDefault();
-		if ($fb.overlay.is(":visible")) {
-			$fb.overlay.fadeOut($fb.delay);
-			$fb.widget.stop().animate({
-				bottom: 0,
-				opacity: 0
-			}, $fb.delay * 2, function() {
-				$(this).hide('slow');
-				$fb.button.show();
-			});
-		} else {
-			$fb.button.fadeOut('medium', function() {
-				$fb.widget.stop().show().animate({
-					bottom: "30px",
-					opacity: 1
-				}, $fb.delay * 2);
-				$fb.overlay.fadeIn($fb.delay);
-			});
-		}
+	if (is_mobile == true) {
+		//Conditional script here
+		$('.big-background, .small-background-section').addClass('big-background-default-image');
+	}else{
+		$(".player").mb_YTPlayer(); 
+	}
 	});
+	*/
+	/*  IF YOU WANT TO USE DEVICE.JS TO DETECT THE VIEWPORT AND MANIPULATE THE OUTPUT  */
 
-	$('.ver-mas-rutas').on('click', function () {
-		$('.inner-routes-list-container').toggleClass('opened');
-	});
-
-	$('.routes-selector li a').on('click', function () {
-		console.log('clicked ver más');
-		$('.inner-routes-list-container').removeClass('opened');
-	});
-
-	$('.inner-routes-list a, .routes-list a').on('click', function () {
-		var this_element_attr = $(this).attr('class');
-	});
-
-	setTimeout(function(){
-		$('.hide-this').addClass('hidden');
-	}, 1000);
-
-
-
-	$(document).ready(function() {
-		/* IF YOU WANT TO APPLY SOME BASIC JQUERY TO REMOVE THE VIDEO BACKGROUND ON A SPECIFIC VIEWPORT MANUALLY
-		 var is_mobile = false;
-		if( $('.player').css('display')=='none') {
-			is_mobile = true;       
-		}
-		if (is_mobile == true) {
-			//Conditional script here
-			$('.big-background, .small-background-section').addClass('big-background-default-image');
-		}else{
-			$(".player").mb_YTPlayer(); 
-		}
-		});
-		*/
-		/*  IF YOU WANT TO USE DEVICE.JS TO DETECT THE VIEWPORT AND MANIPULATE THE OUTPUT  */
-
-		//Device.js will check if it is Tablet or Mobile - http://matthewhudson.me/projects/device.js/
-		if (!device.tablet() && !device.mobile()) {
-			$(".player").mb_YTPlayer();
-		} else {
-			//jQuery will add the default background to the preferred class 
-			$('.big-background, .small-background-section').addClass('big-background-default-image');
-		}
-	});
-})(jQuery);
+	//Device.js will check if it is Tablet or Mobile - http://matthewhudson.me/projects/device.js/
+	if (!device.tablet() && !device.mobile()) {
+		$(".player").mb_YTPlayer();
+	} else {
+		//jQuery will add the default background to the preferred class 
+		$('.big-background, .small-background-section').addClass('big-background-default-image');
+	}
+});
 
 $('.prices-container').slick({
   	dots: false,
@@ -489,7 +425,7 @@ $('.zones-container').slick({
 
 
 $('.tickets-container').slick({
-  dots: false,
+  dots: true,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -505,3 +441,70 @@ $('.tickets-container').slick({
 	}
   ]
 });
+
+(function($) {
+
+	page_url = window.location.href;
+	page_url = page_url.split('loscamachos.com.mx');
+	// page_url = page_url.split('loscamachos.dev');
+	// full_url = full_url.split("#maps-container-");
+	page_slug = page_url[1].replace("/", "");
+	page_slug = page_slug.replace("/", "");
+	
+	console.log('Page --> ' + page_slug[1]);
+
+	if (page_slug[1] !== undefined) {
+		$('li.' + page_slug).addClass('active');
+	}
+
+	var $fb = {
+		delay: 125,
+		overlay: $(".fb-overlay"),
+		widget: $(".fb-widget"),
+		button: $(".fb-button")
+	};
+	setTimeout(function() {
+		$("div.fb-livechat").fadeIn();
+	}, $fb.delay * 8);
+	$(".ctrlq").on('click', function(e) {
+		e.preventDefault();
+		if ($fb.overlay.is(":visible")) {
+			$fb.overlay.fadeOut($fb.delay);
+			$fb.widget.stop().animate({
+				bottom: 0,
+				opacity: 0
+			}, $fb.delay * 2, function() {
+				$(this).hide('slow');
+				$fb.button.show();
+			});
+		} else {
+			$fb.button.fadeOut('medium', function() {
+				$fb.widget.stop().show().animate({
+					bottom: "30px",
+					opacity: 1
+				}, $fb.delay * 2);
+				$fb.overlay.fadeIn($fb.delay);
+			});
+		}
+	});
+
+	$('.ver-mas-rutas').on('click', function () {
+		$('.inner-routes-list-container').toggleClass('opened');
+	});
+
+	$('.routes-selector li a').on('click', function () {
+		console.log('clicked ver más');
+		$('.inner-routes-list-container').removeClass('opened');
+	});
+
+	$('.inner-routes-list a, .routes-list a').on('click', function () {
+		var this_element_attr = $(this).attr('class');
+	});
+
+	setTimeout(function(){
+		$('.hide-this').addClass('hidden');
+	}, 1000);
+
+
+
+})(jQuery);
